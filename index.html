@@ -5,12 +5,33 @@
 <meta charset="utf-8">
 </head>
 
-<body>
+<body id="target" >
+
     <h1><a href="index.html">WEB</a></h1>
+
+    <input id="night_day" type="button" value="DarkMode" onclick="
+    if(document.querySelector('#night_day').value === 'DarkMode'){
+      document.querySelector('#target').style.backgroundColor='black';
+      document.querySelector('#target').style.color='white';
+      document.querySelector('#night_day').value = 'day'
+
+    }else{
+      document.querySelector('#target').style.backgroundColor='white';
+      document.querySelector('#target').style.color='black';
+      document.querySelector('#night_day').value = 'DarkMode'
+    }
+    ">
+    
+
 <ol>
     <li><a href="1.html" >HTML</a></li> 
     <li><a href="2.html" >CSS</a></li>  
-    <li><a href="3.html" >JavaScript</a> </li>   
+    <li><a href="3.html" >JavaScript</a> </li>
+    <li><a href="ex1.html" >ex1</a> </li>   
+    <li><a href="ex2.html" >ex2</a> </li>
+    <li><a href="ex3.html" >ex3</a> </li>
+    <li><a href="ex4.html" >ex4</a> </li>
+    <li><a href="ex5.html" >ex5</a> </li>
 </ol>
 
 <h2>WEB</h2>
